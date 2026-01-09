@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ciudad Primavera – Tour Schedule</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg-gradient: linear-gradient(180deg,#b9b7c9 0%, #f3b184 100%);
+  --white:#ffffff;
+  --yellow:#ffd54f;
+  --orange:#ff9800;
+  --orange-dark:#f57c00;
+  --text-soft:rgba(255,255,255,.85);
+}
+
+*{
+  box-sizing:border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", system-ui, sans-serif;
+}
+
+body{
+  margin:0;
+  padding:50px 20px 80px;
+  background:var(--bg-gradient);
+  color:var(--white);
+}
+
+/* ===== HEADER ===== */
+h1{
+  text-align:center;
+  font-size:46px;
+  letter-spacing:3px;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  text-align:center;
+  font-size:18px;
+  letter-spacing:2px;
+  opacity:.9;
+  margin-bottom:60px;
+}
+
+/* ===== CALENDAR ===== */
+.calendar{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.event{
+  background:rgba(255,255,255,.12);
+  backdrop-filter: blur(6px);
+  border-radius:20px;
+  padding:22px;
+  text-align:center;
+  position:relative;
+}
+
+.city{
+  font-size:20px;
+  margin-bottom:6px;
+}
+
+.date{
+  font-size:34px;
+  font-weight:900;
+  color:var(--yellow);
+}
+
+.month{
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.venue{
+  font-size:13px;
+  opacity:.9;
+  margin-top:6px;
+}
+
+.flight{
+  margin-top:16px;
+}
+
+.flight a{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--orange);
+  color:#fff;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:1px;
+  border-radius:20px;
+  transition:.3s;
+}
+
+.flight a:hover{
+  background:var(--orange-dark);
+}
+
+/* ===== TASKS ===== */
+h2{
+  text-align:center;
+  margin:80px 0 20px;
+  letter-spacing:2px;
+}
+
+.tasks{
+  max-width:900px;
+  margin:0 auto;
+  background:rgba(255,255,255,.15);
+  border-radius:24px;
+  padding:30px 26px;
+}
+
+.task{
+  display:flex;
+  gap:14px;
+  padding:14px 0;
+  border-bottom:1px dashed rgba(255,255,255,.3);
+}
+
+.task:last-child{
+  border-bottom:none;
+}
+
+.task input{
+  accent-color:var(--yellow);
+  transform:scale(1.3);
+  margin-top:4px;
+}
+
+.task label{
+  cursor:pointer;
+  font-size:15px;
+}
+
+.task span{
+  display:block;
+  font-size:13px;
+  opacity:.85;
+  margin-top:4px;
+}
+
+/* ===== FOOTER ===== */
+.note{
+  text-align:center;
+  margin-top:40px;
+  font-size:12px;
+  letter-spacing:1px;
+  opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<h1>CIUDAD PRIMAVERA</h1>
+<div class="subtitle">GIRA DE ESTADIOS</div>
+
+<div class="calendar">
+
+  <div class="event">
+    <div class="city">Cali</div>
+    <div class="date">21</div>
+    <div class="month">MARZO 2026</div>
+    <div class="venue">Estadio Pascual Guerrero</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Pereira</div>
+    <div class="date">28</div>
+    <div class="month">MARZO 2026</div>
+    <div class="venue">Hernán Ramírez Villegas</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Cúcuta</div>
+    <div class="date">11</div>
+    <div class="month">ABRIL 2026</div>
+    <div class="venue">General Santander</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Bucaramanga</div>
+    <div class="date">18</div>
+    <div class="month">ABRIL 2026</div>
+    <div class="venue">Américo Montanini</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Barranquilla</div>
+    <div class="date">01</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Romelio Martínez</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Cartagena</div>
+    <div class="date">09</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Jaime Morón</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+</div>
+
+<h2>STAGE MANAGER – TASK LIST</h2>
+
+<div class="tasks">
+
+  <div class="task">
+    <input type="checkbox" id="a1">
+    <label for="a1">
+      Entradas y salidas de bailarines
+      <span>Cues sincronizados con bloques musicales</span>
+    </label>
+  </div>
+
+  <div class="task">
+    <input type="checkbox" id="a2">
+    <label for="a2">
+      Activaciones de efectos especiales
+      <span>Luces, humo, pirotecnia, visuales</span>
+    </label>
+  </div>
+
+  <div class="task">
+    <input type="checkbox" id="a3">
+    <label for="a3">
+      Cambios de vestuario del artista
+      <span>Backstage + tiempos de transición</span>
+    </label>
+  </div>
+
+  <div class="task">
+    <input type="checkbox" id="a4">
+    <label for="a4">
+      Entradas y salidas de invitados
+      <span>Accesos laterales y puntos de aparición</span>
+    </label>
+  </div>
+
+</div>
+
+<div class="note">
+  Tour Production · Stage Control · Ciudad Primavera
+</div>
+
+</body>
+</html>
