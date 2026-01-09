@@ -12,7 +12,6 @@
   --yellow:#ffe066;
   --orange:#ff9800;
   --orange-dark:#f57c00;
-  --text-soft:rgba(255,255,255,.9);
 }
 
 *{
@@ -51,7 +50,7 @@ h1{
 
 /* ===== CALENDAR ===== */
 .calendar{
-  max-width:1200px;
+  max-width:1300px;
   margin:0 auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -59,7 +58,7 @@ h1{
 }
 
 .event{
-  background:rgba(255,255,255,.14);
+  background:rgba(255,255,255,.15);
   backdrop-filter: blur(6px);
   border-radius:22px;
   padding:22px;
@@ -172,17 +171,18 @@ h2{
 
 <div class="calendar">
 
-  <!-- NUEVA FECHA -->
+  <!-- ENERO -->
   <div class="event">
-    <div class="city">Puerto Gaitán</div>
+    <div class="city">Puerto Gaitán, Colombia</div>
     <div class="date">11</div>
     <div class="month">ENERO 2026</div>
     <div class="venue">Tarima Río</div>
     <div class="flight"><a href="#">VER VUELOS</a></div>
   </div>
 
+  <!-- MARZO -->
   <div class="event">
-    <div class="city">Cali</div>
+    <div class="city">Cali, Colombia</div>
     <div class="date">21</div>
     <div class="month">MARZO 2026</div>
     <div class="venue">Estadio Pascual Guerrero</div>
@@ -190,15 +190,16 @@ h2{
   </div>
 
   <div class="event">
-    <div class="city">Pereira</div>
+    <div class="city">Pereira, Colombia</div>
     <div class="date">28</div>
     <div class="month">MARZO 2026</div>
     <div class="venue">Hernán Ramírez Villegas</div>
     <div class="flight"><a href="#">VER VUELOS</a></div>
   </div>
 
+  <!-- ABRIL -->
   <div class="event">
-    <div class="city">Cúcuta</div>
+    <div class="city">Cúcuta, Colombia</div>
     <div class="date">11</div>
     <div class="month">ABRIL 2026</div>
     <div class="venue">General Santander</div>
@@ -206,15 +207,16 @@ h2{
   </div>
 
   <div class="event">
-    <div class="city">Bucaramanga</div>
+    <div class="city">Bucaramanga, Colombia</div>
     <div class="date">18</div>
     <div class="month">ABRIL 2026</div>
     <div class="venue">Américo Montanini</div>
     <div class="flight"><a href="#">VER VUELOS</a></div>
   </div>
 
+  <!-- MAYO COLOMBIA -->
   <div class="event">
-    <div class="city">Barranquilla</div>
+    <div class="city">Barranquilla, Colombia</div>
     <div class="date">01</div>
     <div class="month">MAYO 2026</div>
     <div class="venue">Romelio Martínez</div>
@@ -222,10 +224,43 @@ h2{
   </div>
 
   <div class="event">
-    <div class="city">Cartagena</div>
+    <div class="city">Cartagena, Colombia</div>
     <div class="date">09</div>
     <div class="month">MAYO 2026</div>
     <div class="venue">Jaime Morón</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <!-- MÉXICO -->
+  <div class="event">
+    <div class="city">Mexico City, Mexico</div>
+    <div class="date">14</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Palacio de los Deportes</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Mexico City, Mexico</div>
+    <div class="date">15</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Palacio de los Deportes</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Tres Potrillos, Mexico</div>
+    <div class="date">17</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Arena VFG</div>
+    <div class="flight"><a href="#">VER VUELOS</a></div>
+  </div>
+
+  <div class="event">
+    <div class="city">Monterrey, Mexico</div>
+    <div class="date">20</div>
+    <div class="month">MAYO 2026</div>
+    <div class="venue">Arena Monterrey</div>
     <div class="flight"><a href="#">VER VUELOS</a></div>
   </div>
 
@@ -235,85 +270,16 @@ h2{
 
 <div class="tasks">
 
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Coordinación general del show
-      <span>Ejecución fluida, tiempos y narrativa completa</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Entradas y salidas de bailarines
-      <span>Cues exactos por canción y visuales</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Cambios de vestuario del artista
-      <span>Backstage, asistentes y tiempos de retorno</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Invitados en escena
-      <span>Accesos, posiciones y seguridad</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      FX & efectos especiales
-      <span>Luces, CO₂, pirotecnia, humo y confeti</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Audio FOH & Monitores
-      <span>Micrófonos, playback, intros y salidas</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Iluminación
-      <span>Snapshots, cambios de escena y golpes musicales</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Visuales / Pantallas
-      <span>Contenido correcto por bloque</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Comunicación intercom
-      <span>Stage, FOH, luces, audio y producción</span>
-    </label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox">
-    <label>
-      Plan de contingencia
-      <span>Fallas técnicas, retrasos o cambios</span>
-    </label>
-  </div>
+  <div class="task"><input type="checkbox"><label>Coordinación general del show<span>Ejecución, tiempos y narrativa</span></label></div>
+  <div class="task"><input type="checkbox"><label>Bailarines<span>Entradas, salidas y posiciones</span></label></div>
+  <div class="task"><input type="checkbox"><label>Vestuario artista<span>Cambios y asistentes</span></label></div>
+  <div class="task"><input type="checkbox"><label>Invitados<span>Accesos y seguridad</span></label></div>
+  <div class="task"><input type="checkbox"><label>FX<span>Luces, CO₂, pirotecnia</span></label></div>
+  <div class="task"><input type="checkbox"><label>Audio FOH / Monitores<span>Mics, playback</span></label></div>
+  <div class="task"><input type="checkbox"><label>Iluminación<span>Snapshots y golpes</span></label></div>
+  <div class="task"><input type="checkbox"><label>Visuales<span>Contenido correcto</span></label></div>
+  <div class="task"><input type="checkbox"><label>Intercom<span>Comunicación total</span></label></div>
+  <div class="task"><input type="checkbox"><label>Contingencias<span>Plan B inmediato</span></label></div>
 
 </div>
 
